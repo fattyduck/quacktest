@@ -22,9 +22,11 @@ public class drawRocket2 {
     }
 
     public static void drawline(int size){
-        for (int line=0; line<=(size*2); line++){
+        System.out.print("+");
+        for (int line=0; line<=(size*2-1); line++){
             System.out.print("=*");
         }
+        System.out.print("+");
         System.out.println();
     }
 
