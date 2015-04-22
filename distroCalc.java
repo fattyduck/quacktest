@@ -56,7 +56,11 @@ class DistroCalc {
     }
     public static void main(String[] args){
         for(char c='a';c<='z';c++){
+
             System.out.printf("%-6C", c);
+            if(c=='e'){
+                System.out.print(' ');
+            }
         }
         System.out.println();
         for(int i=0;i<26;i++){
@@ -65,7 +69,8 @@ class DistroCalc {
         System.out.println();
 
         for(int i=0;i<26;i++){
-            System.out.printf("%-6.02f", calculate("/home/fattyduck/IdeaProjects/HW20150320/src/StellarTrans").get(i));
+            System.out.printf("%-4.02f", calculate("/home/fattyduck/IdeaProjects/HW20150320/src/StellarTrans").get(i));
+            System.out.printf("%-2S","%");
         }
         System.out.println();
     }

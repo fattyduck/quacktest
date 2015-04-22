@@ -84,7 +84,7 @@ public class rockPaperSissor {
             String user = input.nextLine();
             for(int i=0;i<7;i++){
                 System.out.printf("%-20s",computersHand(move).get(i));
-                System.out.printf("%-20s",playersHand(user).get(i));
+                System.out.printf("%-30s",playersHand(user).get(i));
                 System.out.println();
             }
             if((user.equalsIgnoreCase("rock")&&move==0)||(user.equalsIgnoreCase("paper")&&move==1)||(user.equalsIgnoreCase("scissors")&&move==2)){
@@ -94,7 +94,7 @@ public class rockPaperSissor {
                 System.out.println("***You win!***");
                 player+=1;
             }
-            else if((user.equalsIgnoreCase("scissors")&&move==0)||(user.equalgsIgnoreCase("rock")&&move==1)||(user.equalsIgnoreCase("paper")&&move==2)){
+            else if((user.equalsIgnoreCase("scissors")&&move==0)||(user.equalsIgnoreCase("rock")&&move==1)||(user.equalsIgnoreCase("paper")&&move==2)){
                 System.out.println("***You lose!***");
                 computer+=1;
             }
